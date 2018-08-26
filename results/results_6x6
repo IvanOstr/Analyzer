@@ -1,0 +1,49 @@
+/Users/ivan/venv/bin/python /Users/ivan/PycharmProjects/Analyzer/products/rectprod.py
+HotPop 16x10.7
+6 15
+min_pnts
+34.75 24.05040742321337 34.889624567973996 24.19003199118735
+34.1 34.00662607016741 18.10060923097328 18.00723530114069
+max_pnts
+35.35 41.863747290393306 48.04365344465981 54.55740073505307
+32.3 23.811119258883792 42.04018286413954 33.55130212302327
+HotPop 16x6.2
+6 11
+min_pnts
+36.9 36.25192352774053 52.812350325892375 52.16427385363292
+32.0 25.833964248716686 30.32754458771754 24.161508836434237
+max_pnts
+36.9 42.39946716570498 29.51202218823946 35.011489353944434
+32.9 35.7628414020572 47.092173330851544 49.955014732908765
+HotPop 6.2x10.7
+4 9
+min_pnts
+34.65 33.71743355260005 28.47359287183116 27.541026424431227
+36.9 47.559283269581655 36.35963439496453 47.01891766454619
+max_pnts
+35.85 35.94337392983262 42.04976392299788 42.14313785283048
+36.9 26.200407423213385 36.954104520089864 26.25451194330332
+FruityPebbles 30.8x19.6
+13 34
+min_pnts
+27.200000000000003 23.980523331356252 46.69262914921816 43.47315248057443
+30.2 -0.4312743773428096 28.151242119953984 -2.4800322573887996
+max_pnts
+27.200000000000003 23.980523331356252 46.69262914921816 43.47315248057443
+30.2 -0.4312743773428096 28.151242119953984 -2.4800322573887996
+Traceback (most recent call last):
+  File "/Users/ivan/PycharmProjects/Analyzer/products/rectprod.py", line 345, in <module>
+    prod_length, prod_width, to_plot)
+  File "/Users/ivan/PycharmProjects/Analyzer/products/rectprod.py", line 197, in find_max_min_square_count
+    num_of_squares_touched =  find_num_of_squares_touching(a, b, c, d, g, prod_length, prod_width, to_plot)
+  File "/Users/ivan/PycharmProjects/Analyzer/products/rectprod.py", line 152, in find_num_of_squares_touching
+    if do_cubes_intersect(a,b,c,d,e,f,g,h):
+  File "/Users/ivan/PycharmProjects/Analyzer/products/rectprod.py", line 77, in do_cubes_intersect
+    closed_segment_intersect(e, f, a, c) or closed_segment_intersect(e, g, a, c) or closed_segment_intersect(h, g, a, c) or closed_segment_intersect(h, f, a, c) or \
+  File "/Users/ivan/PycharmProjects/Analyzer/products/rectprod.py", line 53, in closed_segment_intersect
+    s2 = side(a,b,d)
+  File "/Users/ivan/PycharmProjects/Analyzer/products/rectprod.py", line 25, in side
+    return 1 if d > 0 else (-1 if d < 0 else 0)
+KeyboardInterrupt
+
+Process finished with exit code 1
